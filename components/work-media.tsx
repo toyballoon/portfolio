@@ -6,12 +6,12 @@ type WorkMediaProps = {
   className?: string;
 };
 
-export function WorkMedia({ src, alt, className = "aspect-video w-full object-cover" }: WorkMediaProps) {
+export function WorkMedia({ src, alt, className = "h-full w-full object-cover" }: WorkMediaProps) {
   if (isVideoThumbnail(src)) {
     return (
       <video
         src={src}
-        className={className}
+        className={`block ${className}`}
         muted
         loop
         autoPlay
@@ -21,5 +21,5 @@ export function WorkMedia({ src, alt, className = "aspect-video w-full object-co
     );
   }
 
-  return <img src={src} alt={alt} className={className} />;
+  return <img src={src} alt={alt} className={`block ${className}`} />;
 }

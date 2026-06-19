@@ -102,9 +102,9 @@ export default function Home() {
                 <BlurFade key={work.slug} inView delay={0.2 + index * 0.1}>
                   <Link
                     href={`/works/${work.slug}`}
-                    className="group flex flex-col border-2 border-white transition-colors hover:border-[#FF4D00]"
+                    className="group flex h-full flex-col border-2 border-white transition-colors hover:border-[#FF4D00]"
                   >
-                    <div className="overflow-hidden border-b-2 border-white transition-colors group-hover:border-[#FF4D00]">
+                    <div className="aspect-video overflow-hidden border-b-2 border-white transition-colors group-hover:border-[#FF4D00]">
                       <WorkMedia src={work.thumbnail} alt={work.title} />
                     </div>
                     <div className="flex flex-col gap-2 p-4">

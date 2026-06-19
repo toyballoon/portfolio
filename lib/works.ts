@@ -41,14 +41,6 @@ export const works: Work[] = [
       },
     ],
   },
-  {
-    slug: "project-03",
-    title: "Project 03",
-    description: "Placeholder description for the third project.",
-    thumbnail: "/works/project-03.jpg",
-    body: "This is a placeholder for the third project. Replace with a longer description of the work, process, and outcomes when ready.",
-    links: [{ label: "Behance", url: "#" }],
-  },
 ];
 
 export function getWorkBySlug(slug: string): Work | undefined {
