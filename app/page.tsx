@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { TallyForm } from "@/components/tally-form";
 import { WorkMedia } from "@/components/work-media";
 import { works } from "@/lib/works";
 
@@ -86,7 +87,7 @@ export default function Home() {
       </section>
 
       <section id="works" className="relative bg-background">
-        <div className="mx-auto max-w-5xl px-6 pb-24 text-white md:px-12">
+        <div className="mx-auto max-w-5xl px-6 pb-12 text-white md:px-12">
           <BlurFade inView delay={0}>
             <div className="h-1 bg-[#FF4D00]" />
           </BlurFade>
@@ -116,6 +117,30 @@ export default function Home() {
                 </BlurFade>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="relative bg-background">
+        <div className="mx-auto max-w-5xl px-6 pb-24 text-white md:px-12">
+          <BlurFade inView delay={0}>
+            <div className="h-1 bg-[#FF4D00]" />
+          </BlurFade>
+
+          <div className="flex flex-col gap-8 pt-12">
+            <BlurFade inView delay={0.1}>
+              <h2 className="text-4xl font-bold md:text-5xl">Contact</h2>
+            </BlurFade>
+
+            <BlurFade inView delay={0.2}>
+              <p className="max-w-2xl text-lg leading-relaxed md:text-xl">
+                Ask me anything
+              </p>
+            </BlurFade>
+
+            <BlurFade inView delay={0.3}>
+              <TallyForm />
+            </BlurFade>
           </div>
         </div>
       </section>
